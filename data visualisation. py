@@ -1,0 +1,36 @@
+print("================================")
+print("   SALES DATA VISUALIZATION")
+print("================================")
+
+months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
+sales = [12000, 15000, 13500, 18000, 21000, 19500]
+
+print("\nMONTHLY SALES")
+print("--------------------------------")
+
+for i in range(len(months)):
+    bars = "#" * (sales[i] // 1000)
+    print(months[i], "|", bars, sales[i])
+
+print("\n--------------------------------")
+print("Highest Sales : May - 21000")
+print("Lowest Sales  : Jan - 12000")
+
+print("\nCATEGORY SALES")
+print("--------------------------------")
+
+categories = ["Technology", "Furniture", "Office Supplies"]
+values = [42000, 30000, 24000]
+
+for i in range(len(categories)):
+    bars = "#" * (values[i] // 2000)
+    print(categories[i], "|", bars, values[i])
+
+print("\n================================")
+print("KEY INSIGHTS")
+print("================================")
+print("1. May has the highest monthly sales.")
+print("2. January has the lowest monthly sales.")
+print("3. Technology has the highest category sales.")
+print("4. Sales generally increased over the months.")
+print("================================")
